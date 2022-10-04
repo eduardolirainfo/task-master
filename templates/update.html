@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>Task Master</title>
+
+{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-md-4 card mx-auto m-4 p-4">
+        <h1 class="text-center">Atualizar Tarefa</h1>
+
+        <form action="/update/{{ task.id }}" method="post">
+            {% include "sweetalerts.html" %}
+            <div class="mb-3">
+                <textarea class="form-control" name="content" id="content" placeholder="{{ task.content }}"
+                    rows="3">{{ task.content }}</textarea>
+                <div id="content" class="form-text">Realize acima a alteração da descrição da tarefa</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Atualizar tarefa</button>
+
+            {{ datetime }}
+
+
+        </form>
+    </div>
+</div>
+{% endblock %}
