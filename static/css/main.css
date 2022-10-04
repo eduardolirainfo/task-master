@@ -1,38 +1,52 @@
-body {
-    margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: aliceblue;
+.swal2-title {
+    display: none !important
 }
 
-.content {
-    margin: 0 auto;
-    width: 400px;
+.swal2-html-container {
+    position: relative !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: .8em 1em 0 !important;
+    color: inherit !important;
+    font-size: 1.875em !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    text-transform: none !important;
+    word-wrap: break-word !important;
 }
 
-table,
-td,
-th {
-    border: 1px solid #aaa;
+@media (min-width: 1200px) {
+
+    .swal2-html-container.h2,
+    .swal2-html-container h2 {
+        font-size: 2rem !important;
+    }
 }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
+.swal2-html-container.h2,
+.swal2-html-container h2 {
+    font-size: calc(1.325rem + .9vw) !important;
 }
 
-th {
-    height: 30px;
+
+.swal2-html-container.h2,
+.swal2-html-container h2 {
+    margin-top: 0 !important;
+    margin-bottom: .5rem !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
 }
 
-td {
-    text-align: center;
-    padding: 5px;
+ul {
+    display: flex;
+    padding-left: 0.5rem !important;
 }
 
-.form {
-    margin-top: 20px;
+li {
+    list-style: none;
+    margin: 0rem 0rem -1.25rem .5rem;
 }
 
-#content {
-    width: 70%;
+a {
+    text-decoration: none !important;
 }
